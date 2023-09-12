@@ -12,6 +12,7 @@
   flex-grow: 1;
   text-align: center;
   font-size: 1.5em;
+  padding-right: 100px;
 }
 
 .logo {
@@ -21,6 +22,6 @@
 }
 
 .navbar img {
-  height: 60px ;
+  height: 60px;
 }
 
