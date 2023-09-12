@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Product, products } from 'src/app/models/products';
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -13,5 +14,8 @@ export class ProductListComponent {
   // addProduct() {
 
   // }
+  getProductDescribe(product: Product){
+    return `${product.price} ₸/кг`;;
+  }
 }
 

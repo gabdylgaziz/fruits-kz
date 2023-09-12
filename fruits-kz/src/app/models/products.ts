@@ -2,28 +2,27 @@ export interface Product {
     id: number;
     name: string;
     price: number;
-    description: string;
     image: string;
 
-}
-
-function formatProductDescription(product: Product): string {
-    return `${product.price} ₸/кг`;
 }
 
 export const products = [
     {
         id: 1,
-        name: 'Banana',
+        name: 'Банан',
         price: 800,
-        description: formatProductDescription({
-            id: 1,
-            name: 'Banana',
-            price: 800,
-            description: '',
-            image: 'banana.png'
-        }),
-        image: 'banana.png'
-
-    }
+        image: 'assets/images/banana.png'
+    },
+    {
+        id: 2,
+        name: 'Апельсин',
+        price: 1200,
+        image: 'assets/images/orange.webp'
+    },
+    {
+        id: 3,
+        name: 'Яблоко',
+        price: 600,
+        image: 'assets/images/apple.png'
+    },
 ];
